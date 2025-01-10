@@ -8,7 +8,15 @@ void displayList(std::vector<T> const &v);
 int main()
 {
     // You can follow along with any code in class here
-
+    curr_index = 0;
+    while (curr_index < names.size())
+    { 
+        if (names[curr_index] < "Thor")
+        {
+            std::cout << names[curr_index] << " ";
+        }
+        curr_index = curr_index + 1;
+    }
     
     return 0;
 }
